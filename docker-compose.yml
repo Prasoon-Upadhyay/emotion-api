@@ -1,0 +1,16 @@
+version: "3.9"
+
+services:
+
+  web:
+    build: .
+    container_name: emotion_api
+    command: gunicorn emotion_api.wsgi:application --bind 0.0.0.0:8000 --timeout 120
+    volumes:
+      - .:/app
+    ports:
+      - "8000:8000"
+    environment:
+      - DEBUG=True
+      - ALLOWED_HOSTS=*
+    restart: unless-stopped
