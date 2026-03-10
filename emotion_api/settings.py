@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-w3z#b$@p-%=aiy&c3dkl(dcum1*=-nc-1b197t27@q)0fn08n-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'emotion-api-fmag.onrender.com', 'web-production-8e7d.up.railway.app']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'emotion-api-fmag.onrender.com', 'web-production-8e7d.up.railway.app', 'web-production-977d2.up.railway.app']
 
 
 
